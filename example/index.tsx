@@ -8,7 +8,7 @@ import { ProductCard,
 
   const product1 = {
     id:'1',
-    tittle:'Coffee Mug - Card',
+    tittle:'Coffee Mug - Card!',
     // img:'./coffee-mug.png'
 }
 

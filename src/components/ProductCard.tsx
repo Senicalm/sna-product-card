@@ -7,7 +7,6 @@ import { ProductContextProps, Product, onChangeArgs, InitialValues, ProductCardH
 export const ProductContext = createContext({} as ProductContextProps)
 const { Provider } = ProductContext;
 
-
 export interface Props{
     // children?:ReactElement|ReactElement[],
     children:(args:ProductCardHandlers) => JSX.Element,
@@ -23,7 +22,6 @@ export const ProductCard = ( {children, product, className, style, onChange, val
 
     const { counter,maxCount, isMaxCountReached, isMinCountReached, increaseBy, reset } = useProduct( {onChange, product, value, initialValues} );
     
-
     return (
         <Provider value={{
             counter,
